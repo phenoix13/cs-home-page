@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASC STUDENT SYLLABUS</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        /* for desktop*/
+        body{
+            background-color: black;
+            font-family: "Roboto Condensed", sans-serif;
+            width: 100vw;
+            height: 100vh;
+        }
+        header{
+            width: 99vw;
+            min-height: 7%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        /* logo and name*/
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 100px;
+            height: 10%;
+            margin-left: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+            margin-left: -30px;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 30px;
+            font-size: 1.5rem;
+        }
+        li a:last-child{
+            margin-right: 10px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 6px;
+            background-color: white;
+        }
+        /* button & hover*/
+        button{
+            font-weight: 700;
+            text-align: center;
+            font-size: 1rem;
+            transition: all 0.4s linear 0s;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 5px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+
+        }
+        /* nav list*/
+        .list{
+            display: block;
+            position: relative;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        .child a{
+            color: black;
+            font-size: 1.4rem;
+            display: block;
+            text-align: center;
+            transition: all 0.4s linear;
+        }
+        .child a:hover{
+            background-color: white;
+            padding: 0;            
+        }
+        .list:hover .child{
+            display: block;
+        }
+        hr{
+            border: 2px solid brown;
+        }
+        section{
+            color: white;
+        }
+        .a{
+            margin: 15px;
+            font-size: 1.5rem;
+            text-indent: 100px;
+        }
+        .b{
+            margin: 15px;
+            margin-top: 25px;
+            font-size: 1.5rem;
+        }
+        .b1{
+            text-indent: 50px;
+            margin-top: 20px;
+        }
+        .b1 h4{
+            font-size: 2rem;
+            margin: 20px;
+        }
+        .b1 a{
+            text-decoration: none;
+            color: aqua;
+        }
+        /* for phone*/
+        @media(max-width:600px){
+            header{
+            width: 100vw;
+            min-height: 10%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        /* logo and name*/
+        img{
+            width: 60px;
+            height: 70px;
+            margin-left: 10px;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 5px;
+            font-size: 0.8rem;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 2px;
+            background-color: white;
+        }
+        /* button & hover*/
+        button{
+            font-weight: 700;
+            text-align: center;
+            font-size: 0.7rem;
+            transition: all 0.4s linear 0s;
+            width: 60px;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 5px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+                /* nav list*/
+                .list{
+            display: block;
+            position: relative;
+        }
+        .child{
+            position: absolute;
+            display: none;
+            background-color: white;
+            z-index: 1;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        .child a{
+            color: black;
+            font-size: 0.8rem;
+            display: block;
+            text-align: center;
+            transition: all 0.4s linear;
+        }
+        .child a:hover{
+            background-color: white;
+            padding: 0;            
+        }
+        .list:hover .child{
+            display: block;
+        }
+        .a{
+            margin-top: 10px;
+            font-size: 0.9rem;
+            text-indent: 50px;
+        }
+        .b{
+            margin: 15px;
+            margin-top: 25px;
+            font-size: 1rem;
+        }
+        .b1{
+            text-indent: 50px;
+            margin-top: 20px;
+        }
+        .b1 h4{
+            font-size: 1.3rem;
+            margin: 15px 0px 0px 10px;
+        }
+        .b1 a{
+            text-decoration: none;
+            color: aqua;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="https://i.ibb.co/pJVLMbc/stydy-logo.jpg">
+        </div>
+        <nav>
+            <li><a href="https://phenoix13.github.io/home-page-kasc/">
+                HOME
+            </a></li>
+            <li class="list"><a>
+                COURSE
+            </a>
+            <div class="child">
+                <a href="">B.SC.CS</a>
+            </div>
+            </li>
+            <li><a href="https://phenoix13.github.io/kasc-news/">
+                NEWS
+            </a></li>
+            <button> 
+                <a href="mailto:teamphenoix13@gamil.com">CONTACT US
+                </a>
+            </button>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <div class="a">
+            <p>
+                The project is desined by TEAM PHOENIX from CS department.It is to help all CS department student in our college,students want subject material for their studies.So we plan to do this project to support.To contact us
+            </p>
+        </div> 
+        <div class="b">
+            <h2>
+                Department of Computer science :
+            </h2>
+            <div class="b1">
+                <h4>
+                    <a href="" title="click me">
+                        1 YEAR SYLLABUS
+                    </a>
+                </h4>
+                <h4>
+                    <a href="" title="click me">
+                        2 YEAR SYLLABUS
+                    </a>
+                </h4>
+                <h4>
+                    <a href="" title="click me ">
+                        3 YEAR SYLLABUS
+                    </a>
+                </h4>
+            </div>
+        </div>      
+    </section>
+</body>
+</html>
