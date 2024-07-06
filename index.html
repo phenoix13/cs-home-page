@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KASC STUDENT SYLLABUS</title>
+    <title>CS SYLLABUS</title>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
         *{
             padding: 0%;
             margin: 0%;
@@ -65,35 +65,6 @@
             background-color: white;
         }
        
-        /* nav list*/
-        .list{
-            display: block;
-            position: relative;
-            margin-left: -10px;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-            padding: 7px 0 7px 0px;
-            width: 100%;
-        }
-        .child a{
-            color: black;
-            font-size: 1.6rem;
-            display: block;
-            padding-left:7px;
-            text-align: center;
-            transition: all 0.4s linear;
-            }
-        .child a:hover{
-            background-color: white;
-            padding: 0 6px 0 6px;           
-            }
-        .list:hover .child{
-            display: block;
-            }        
         /* button & hover*/
         button{
             font-weight: 700;
@@ -117,31 +88,38 @@
         }
         hr{
             border: 2px solid brown;
-        }   
-        /*section*/
+        }     
+        /* section content*/
         section{
             color: white;
-        } 
-        .imm{
-            margin: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        } 
-        .img{
-            width: 100%;
-            height: 300px;
-            border: 2px solid gold;
+            margin: 15px;
         }
-        .imm h2{
-            font-size: 2.5rem;
-            margin: 10px;
-            margin-left: -200px;
+        section .a{
+            margin-top: 40px;
+            text-indent: 70px;
+            font-size: 1.7rem;
         }
-        .imm h4{
-            font-size: 1.5rem;
-            margin-left: -150px;
+        section .b h2{
+            margin: 15px;
+            color: gold;
+            font-size: 2.3rem;
+        }
+        .b1 h4{
+            margin: 25px;
+            font-size: 2rem;
+        }
+        .b1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .b1 .c1 a:hover{
+            color: rgb(221, 221, 22);
+        }
+        .b1 .c2 a:hover{
+            color: rgb(30, 30, 212);
+        }
+        .b1 .c3 a:hover{
+            color: rgb(207, 30, 30);
         }
        /* for phone desktop*/
         @media(max-width:900px){
@@ -182,34 +160,6 @@
             padding: 4px;
             background-color: white;
         }
-        /* nav list*/
-            .list{
-            display: block;
-            position: relative;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-            padding: 7px 0 7px 0px;
-            width: 100%;
-        }
-        .child a{
-            color: black;
-            font-size: 1.7rem;
-            display: block;
-            padding-left:7px;
-            text-align: center;
-            transition: all 0.4s linear;
-            }
-        .child a:hover{
-            background-color: white;
-            padding: 0 4px 0 4px;           
-            }
-        .list:hover .child{
-            display: block;
-            }        
 
         /* button & hover*/
         button{
@@ -261,7 +211,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: auto 10px;
+            margin: auto -15px;
             font-size: 1.1rem;
         }
         li a{
@@ -274,36 +224,7 @@
             padding: 2px;
             background-color: white;
         }
-        .new {
-            margin-right: -20px;
-        }
-       /* nav list*/
-        .list{
-            display: block;
-            position: relative;
-            margin-left: -35px;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-            width: 100%;
-        }
-        .child a{
-            color: black;
-            font-size: 1rem;
-            display: block;
-            text-align: center;
-            transition: all 0.4s linear;
-            }
-        .child a:hover{
-            background-color: white;
-            padding: 0 0px 0 0px;           
-            }
-        .list:hover .child{
-            display: block;
-            }        
+        
         /* button & hover*/
         button{
             font-weight: 700;
@@ -327,33 +248,27 @@
             font-size: 0.7rem;
             font-weight: bold;
         }
-        /*section*/
+     /* section content*/
         section{
             color: white;
-        } 
-        .imm{
-           
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        } 
-        .img{
-            width: 90%;
-            height: 200px;
-            border: 2px solid gold;
-        }
-        .imm h2{
-            font-size: 1.5rem;
             margin: 10px;
-          
         }
-        .imm h4{
+        section .a{
+            margin-top: 40px;
+            text-indent: 90px;
             font-size: 1rem;
-            margin-left: 10px;
         }
+        section .b h2{
+            margin: 15px;
+            color: gold;
+            font-size: 1.5rem;
         }
-     </style>
+        .b1 h4{
+            margin: 25px;
+            font-size: 1.2rem;
+        }
+        }    
+        </style>
 </head>
 <body>
     <header>
@@ -365,11 +280,8 @@
                 HOME
             </a></li>
             <li class="list"><a>
-                COURSE
+                B.SC.CS
             </a>
-            <div class="child">
-                <a href="https://phenoix13.github.io/cs-home-page/">B.SC.CS</a>
-            </div>
             </li>
             <li class="new"><a href="https://phenoix13.github.io/kasc-news/">
                 NEWS
@@ -382,49 +294,33 @@
     </header>
     <hr>
     <section>
-        <div class="imm">
-            <div>
-                <h2>
-                    Step : 1
-                    <h4>To go Home page click Home option</h4>
-                </h2>
-                <img src="https://i.ibb.co/rHTX02k/01.jpg" class="img">
+        <div class="a">
+            <p>
+                The project is desined by TEAM PHOENIX from CS department.It is to help all CS department student in our college,students want subject material for their studies.So we plan to do this project to support.
+            </p>
+        </div> 
+        <div class="b">
+            <h2>
+                Department of Computer science :
+            </h2>
+            <div class="b1">
+                <h4 class="c1">
+                    <a href="https://phenoix13.github.io/kasc-1-YEAR/" title="click me">
+                        1 YEAR SYLLABUS
+                    </a>
+                </h4>
+                <h4 class="c2">
+                    <a href="https://phenoix13.github.io/kasc-2-year/" title="click me">
+                        2 YEAR SYLLABUS
+                    </a>
+                </h4>
+                <h4 class="c3">
+                    <a href="https://phenoix13.github.io/kasc-3-YEAR/" title="click me ">
+                        3 YEAR SYLLABUS
+                    </a>
+                </h4>
             </div>
-            <div>
-                <h2>
-                    Step : 2
-                    <h4>To click Course option and select the Course</h4>
-                </h2>
-                <img src="https://i.ibb.co/LpjZnDq/02.jpg" class="img">
-            </div><div>
-                <h2>
-                    Step : 3
-                    <h4>To go News page click News option</h4>
-                </h2>
-                <img src="https://i.ibb.co/M6JwMjX/03.jpg" class="img">
-            </div>
-            <div>
-                <h2>
-                    Step : 4
-                    <h4>To click Contact option and you can mail your question</h4>
-                </h2>
-                <img src="https://i.ibb.co/Nr389FL/04.jpg" class="img">
-            </div>
-            <div>
-                <h2>
-                    Step : 5
-                    <h4>If you select the Course and you can select the year of studing</h4>
-                </h2>
-                <img src="https://i.ibb.co/rvJpFQm/05.jpg" class="img">
-            </div>
-            <div>
-                <h2>
-                    Step : 6
-                    <h4>And you can view the semesters and the subject name is show ,you can click</h4>
-                </h2>
-                <img src="https://i.ibb.co/qCgGj6y/06.jpg" class="img">
-            </div>
-        </div>
-    </section>
+        </div>      
+    </section>    
 </body>
 </html>
